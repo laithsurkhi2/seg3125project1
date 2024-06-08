@@ -216,6 +216,12 @@ footer {
 
 }
 
+#services h3{
+    
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 #services p{
     color: whitesmoke;
 }
@@ -600,3 +606,7 @@ footer {
     color: white;
   }
 
+
+  #gallery{
+    background-color: #fff;
+  }

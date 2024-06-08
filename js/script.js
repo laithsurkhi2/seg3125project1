@@ -4,15 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', function(event) {
             event.preventDefault(); 
 
-            
             const formData = new FormData(event.target);
             const data = {};
             formData.forEach((value, key) => data[key] = value);
 
-            
             localStorage.setItem('appointmentData', JSON.stringify(data));
 
-           
             window.location.href = 'appointmentconfirmation.html';
         });
     }
@@ -31,5 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p><strong>Message:</strong> ${data.message}</p>
             `;
         }
+    }
+
+    const deleteButton = document.getElementById('delete-appointment');
+    if (deleteButton) {
+        deleteButton.addEventListener('click', function() {
+            localStorage.removeItem('appointmentData');
+            detailsContainer.innerHTML = "<p>Your appointment has been cancelled.</p>";
+            deleteButton.style.display = 'none'; 
+        });
     }
 });

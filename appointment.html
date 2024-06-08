@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="./js/script.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown Cuts</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/flaticon.min.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body id="home" data-bs-spy="scroll" data-bs-target="#navbar-example">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Crown Cuts</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experts.html">Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+        </ul>
+        <a href="appointment.html" class="btn btn-outline-brand ms-lg-3">Appointment</a>
+      </div>
+    </div>
+  </nav>
+</body>
+
+
+  <section class="section appoin" id="appointment" aria-label="appointment">
+    <div class="appointment-container">
+      <div class="appoin-card">
+        <div class="card-content">
+          <h2 class="h2 section-title">Make an Appointment</h2>
+          <p class="section-text">Make your appointment right now!</p>
+          <form id="appointmentForm" class="appoin-form">
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
+              <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+              <select name="category" class="input-field">
+                <option value="Select category">Choose Service</option>
+                <option value="Beauty & spa">Beauty & spa</option>
+                <option value="Body massage">Body massage</option>
+                <option value="Shaving & Facial">Shaving & Facial</option>
+                <option value="Hair Color">Hair Color</option>
+              </select>
+              <select name="expert" class="input-field">
+                <option value="Select expert">Choose your expert</option>
+                <option value="robert">Robert</option>
+                <option value="Ronaldo">Ronald</option>
+                <option value="John">John</option>
+                <option value="Patricia">Patricia</option>
+              </select>
+            </div>
+            <input type="date" name="date" required class="input-field date">
+            <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
+            <button type="submit" class="form-btn">
+              <span class="span" style="color: black;">Appointment Now</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+        </div>
+        <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+          <img src="./assets/images/appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt="" class="img-cover">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>CROWN CUTS</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Location:</p>
+            <p>Bank Street, Ottawa, ON</p>
+        </div>
+        <div class="footer-section">
+            <h2>Opening Hours</h2>
+            <p>Sunday to Friday: 9am-9pm</p>
+        </div>
+        <div class="footer-section">
+            <h2>Contact Us</h2>
+            <p>Phone: <a href="tel:+1234567890" class="phone-number">+1 234 567 890</a></p>
+        </div>
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="experts.html">Experts</a></li>
+            </ul>
+        </div>
+        
+    </div>
+  </footer>
+</html>
